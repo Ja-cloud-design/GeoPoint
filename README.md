@@ -1,0 +1,2 @@
+# GeoPoint
+Politica privacidad GeoPoint
