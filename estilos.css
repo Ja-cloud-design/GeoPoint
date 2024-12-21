@@ -11,12 +11,12 @@ a:hover { text-decoration:underline}
 .separacion-inferior{margin-bottom: 10px;}
 
 .img-QR {
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-                border: 3px solid #ddd;
-
-            background-color: #fff;
-            margin-top: 50px;
-        }
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #000000;
+    background-color: #fff;
+    margin-top: 50px;
+    max-width: 300px;
+}
