@@ -6,7 +6,7 @@ body {
     padding: 0; 
     background-color: #FFFFFF; /* Fondo blanco */
     color: #333333; /* Gris oscuro para texto, alto contraste con el fondo */
-    font-size: 1em; 
+    font-size: 20px; 
 }
 
 /* Contenedor principal */
