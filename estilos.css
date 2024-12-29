@@ -1,15 +1,71 @@
-body { font-family:Arial, sans-serif;line-height:1.4;margin:0;padding:0;background-color:white;color:#444141;font-size: 1em;}
-.container { max-width:800px;margin:0px auto;padding:20px;background:#fff;border-radius:8px;}
-h1 { font-size:24px;margin-bottom:5px;}
-h2 { font-size:20px;margin-top:20px;margin-bottom:0px;}
-p { margin:0px;}
-ul { list-style:disc;margin-top: 0px;}
-.footer { text-align:center;margin-top:30px;font-size:14px;color:#555;}
-a { color:#0056b3;text-decoration:none;}
-a:hover { text-decoration:underline}
-.alineacion-derecha{text-align:right;}
-.separacion-inferior{margin-bottom: 10px;}
+/* Estilo general del cuerpo */
+body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.4; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #333333; /* Gris oscuro para texto, alto contraste con el fondo */
+    font-size: 1em; 
+}
 
+/* Contenedor principal */
+.container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: #FFF; 
+    border-radius: 8px; 
+}
+
+/* Encabezado principal */
+h1 { 
+    font-size: 24px; 
+    margin-bottom: 5px; 
+    color: #333333; /* Alto contraste */ 
+}
+
+/* Encabezados secundarios */
+h2 { 
+    font-size: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 0px; 
+    color: #333333; /* Alto contraste */
+    font-weight: bold;
+}
+
+/* Párrafos */
+p { 
+    margin: 0px; 
+    color: #444141; /* Gris oscuro para buen contraste */ 
+}
+
+/* Listas */
+ul { 
+    list-style: disc; 
+    margin-top: 0px; 
+    color: #333333; /* Alto contraste para ítems de lista */
+}
+
+/* Pie de página */
+.footer { 
+    text-align: center; 
+    margin-top: 30px; 
+    font-size: 14px; 
+    color: #333333; /* Alto contraste con fondo blanco */
+}
+
+/* Enlaces */
+a { 
+    color: #004080; /* Azul oscuro para alto contraste */ 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+/* Imagen QR */
 .img-QR {
     max-width: 100%;
     height: auto;
@@ -19,4 +75,13 @@ a:hover { text-decoration:underline}
     background-color: #fff;
     margin-top: 50px;
     max-width: 200px;
+}
+
+/* Alineación y espaciado */
+.alineacion-derecha {
+    text-align: right; 
+}
+
+.separacion-inferior {
+    margin-bottom: 10px; 
 }
