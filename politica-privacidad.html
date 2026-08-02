@@ -9,9 +9,9 @@
 <body>
     <div class="container">
         <h1>Política de Privacidad</h1>
-        <p class="alineacion-derecha separacion-inferior"><strong>Última actualización:</strong> 2026-06-20</p>
+        <p class="alineacion-derecha separacion-inferior"><strong>Última actualización:</strong> 2026-08-02</p>
 
-        <p>GeoPoint respeta tu privacidad. La app está diseñada para funcionar de forma local en tu dispositivo. GeoPoint no crea cuentas de usuario, no utiliza servidores propios y no envía ningún dato al desarrollador ni a terceros.</p>
+        <p>GeoPoint respeta tu privacidad. La aplicación no crea cuentas de usuario ni utiliza servidores propios. Las listas, coordenadas guardadas y archivos de importación o exportación se gestionan localmente en tu dispositivo. Determinadas funciones del mapa y del buscador necesitan conectarse a servicios externos, tal como se explica en esta política.</p>
 
         <h2>1. Datos que se gestionan en la app</h2>
         <p>GeoPoint permite crear y gestionar información relacionada con coordenadas y listas de ubicaciones:</p>
@@ -21,11 +21,12 @@
             <li><strong>Listas de coordenadas:</strong> archivos locales donde organizas tus ubicaciones.</li>
             <li><strong>Archivos de importación y exportación:</strong> copias JSON o ZIP que tú decides crear, guardar o importar.</li>
         </ul>
-        <p>Esta información permanece en tu dispositivo. GeoPoint no la recopila, no la sube a internet, no la envía al desarrollador y no la comparte con terceros.</p>
+        <p>Esta información permanece en tu dispositivo y GeoPoint no la envía al desarrollador. Las listas de coordenadas, sus nombres y los archivos JSON o ZIP no se transmiten automáticamente a servicios externos. Únicamente se comunican los datos necesarios para las funciones de mapa y búsqueda descritas en el apartado 6.</p>
 
         <h2>2. Uso de la ubicación</h2>
-        <p>GeoPoint puede solicitar acceso a la ubicación del dispositivo para permitirte guardar tu posición actual o visualizarla dentro de la app.</p>
-        <p>La ubicación se utiliza únicamente en el dispositivo para la función que estás usando. GeoPoint no realiza seguimiento continuo, no crea perfiles de usuario, no registra historial de movimientos y no envía tu ubicación al desarrollador ni a terceros.</p>
+        <p>GeoPoint puede solicitar acceso a la ubicación precisa o aproximada del dispositivo para obtener tu posición actual, mostrarla en el mapa o guardarla como coordenada.</p>
+        <p>Mientras GeoPoint está en primer plano, puede realizar una obtención breve de la ubicación al abrir la aplicación y mantenerla actualizada mientras el mapa permanece visible. Las actualizaciones se detienen cuando la aplicación se minimiza o se cierra. GeoPoint no guarda un historial de movimientos, no utiliza la ubicación para crear perfiles y no la envía al desarrollador.</p>
+        <p>Cuando utilizas el buscador del mapa, la ubicación actual o seleccionada puede enviarse al servicio externo Photon para priorizar resultados cercanos. Si no utilizas el buscador, Photon no recibe esa ubicación desde GeoPoint.</p>
 
         <h2>3. Almacenamiento local</h2>
         <p>Las coordenadas, listas y configuraciones se guardan localmente en el dispositivo. Los archivos exportados se guardan en la ubicación seleccionada o permitida por Android, como la carpeta de descargas.</p>
@@ -45,24 +46,40 @@
         <ul>
             <li><strong>Ubicación precisa o aproximada:</strong> para obtener tu posición actual cuando quieras guardar una coordenada o verla en la app.</li>
             <li><strong>Acceso a archivos o almacenamiento:</strong> para importar y exportar archivos JSON o ZIP seleccionados por ti.</li>
-            <li><strong>Acceso a Internet:</strong> para funciones técnicas que puedan requerir conexión, como la visualización de mapas cuando corresponda.</li>
+            <li><strong>Acceso a Internet:</strong> para descargar la cartografía del mapa y consultar los servicios de búsqueda de lugares.</li>
             <li><strong>Estado de la red:</strong> para comprobar si existe conexión cuando una función lo necesita.</li>
         </ul>
         <p>Los permisos se utilizan solo para las funciones necesarias de la app. Puedes rechazarlos o revocarlos desde los ajustes de Android, aunque algunas funciones podrían dejar de estar disponibles.</p>
 
-        <h2>6. Publicidad, analítica y terceros</h2>
-        <p>GeoPoint no incluye anuncios, no utiliza herramientas de analítica, no crea perfiles de usuario y no vende datos.</p>
-        <p>GeoPoint no comparte ningún dato con el desarrollador ni con terceros. Esto incluye coordenadas, listas, archivos, nombres de ubicaciones, configuraciones, datos de uso e información personal.</p>
+        <h2>6. Servicios externos</h2>
+        <h3>6.1. Photon</h3>
+        <p>Cuando utilizas el buscador del mapa, GeoPoint consulta el servicio externo Photon, basado en OpenStreetMap y administrado por Komoot. Para proporcionar sugerencias y priorizar resultados cercanos, se puede transmitir mediante conexión HTTPS el texto introducido en el buscador y, cuando está disponible, la ubicación actual o seleccionada.</p>
+        <p>Photon no recibe automáticamente las listas de coordenadas, sus nombres, los archivos JSON o los archivos ZIP almacenados en GeoPoint. GeoPoint no utiliza los datos enviados durante estas consultas con fines publicitarios, analíticos ni para crear perfiles de usuario. Puedes obtener más información sobre Photon en su <a href="https://github.com/komoot/photon" target="_blank" rel="noopener noreferrer">repositorio oficial</a>.</p>
 
-        <h2>7. Seguridad y responsabilidad del usuario</h2>
+        <h3>6.2. OpenStreetMap</h3>
+        <p>La visualización del mapa requiere descargar mosaicos cartográficos proporcionados por OpenStreetMap. Estas peticiones no incluyen las listas o archivos guardados en GeoPoint, aunque el proveedor puede recibir los datos técnicos imprescindibles para establecer la conexión. El tratamiento realizado por este servicio se rige por la <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">Política de privacidad de OpenStreetMap Foundation</a>.</p>
+
+        <h3>6.3. Geocoder de Android</h3>
+        <p>Si Photon no ofrece resultados o no está disponible, GeoPoint puede utilizar como respaldo el servicio de geocodificación configurado en el dispositivo Android. En ese caso, el texto buscado y una referencia geográfica pueden ser procesados por el proveedor de dicho servicio para devolver direcciones o lugares.</p>
+
+        <p>GeoPoint no dispone de servidores propios, no conserva una copia externa de estas consultas y no controla los periodos de conservación que puedan aplicar los proveedores mencionados.</p>
+
+        <h2>7. Publicidad, analítica y venta de datos</h2>
+        <p>GeoPoint no incluye anuncios, no utiliza herramientas de analítica, no crea perfiles de usuario y no vende datos. La información transmitida a los servicios externos indicados se utiliza exclusivamente para proporcionar la cartografía, la búsqueda y las sugerencias de lugares.</p>
+
+        <h2>8. Seguridad y responsabilidad del usuario</h2>
         <p>Como los datos se guardan en tu dispositivo, la seguridad depende también de la protección del propio dispositivo. Se recomienda utilizar bloqueo de pantalla y guardar las copias exportadas en lugares seguros.</p>
         <p>Los archivos exportados pueden contener coordenadas y nombres de ubicaciones. Si decides compartirlos manualmente fuera de GeoPoint, debes hacerlo solo con personas o servicios de confianza.</p>
 
-        <h2>8. Eliminación de datos</h2>
+        <h2>9. Conservación y eliminación de datos</h2>
         <p>Puedes eliminar tus listas y coordenadas desde la app. También puedes borrar los archivos exportados desde el gestor de archivos del dispositivo.</p>
         <p>Si desinstalas GeoPoint, Android puede eliminar los datos internos asociados a la app. Los archivos exportados que hayas guardado fuera de la app permanecerán en el almacenamiento del dispositivo hasta que los elimines manualmente.</p>
+        <p>GeoPoint no conserva en servidores propios las consultas realizadas a Photon, OpenStreetMap o al Geocoder de Android. La posible conservación técnica realizada por esos proveedores se rige por sus propias políticas.</p>
 
-        <h2>9. Cambios en esta política</h2>
+        <h2>10. Contacto</h2>
+        <p>Para realizar consultas relacionadas con esta Política de Privacidad o con el tratamiento de datos en GeoPoint, puedes escribir al desarrollador J.A.M.A. mediante el correo electrónico <a href="mailto:fullstackphp@gmail.com">fullstackphp@gmail.com</a>.</p>
+
+        <h2>11. Cambios en esta política</h2>
         <p>Esta Política de Privacidad puede actualizarse para reflejar cambios en la app, en sus funciones o en los requisitos de publicación. Cuando haya cambios importantes, se publicará una versión actualizada de esta política.</p>
 
 
